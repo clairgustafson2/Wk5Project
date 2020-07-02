@@ -3,9 +3,29 @@ public class App {
 
 	public static void main(String[] args) {
 
-		Logger logger = new AsteriskLogger();
+		Logger loggerA = new AsteriskLogger();
+		Logger loggerS = new SpacedLogger();
 		
-		logger.error("Hello");
+	
+		loggerA.log("AsterisksLogger");
+		
+		System.out.println();
+		System.out.println();
+		
+		loggerA.error("AsterisksLogger");
+		
+		System.out.println();
+		System.out.println();
+		
+		loggerS.log("Spaced");
+		
+		System.out.println();
+		System.out.println();
+		
+		loggerS.error("Spaced");
+		
+		
+		
 	}
 
 }
