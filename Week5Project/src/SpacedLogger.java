@@ -3,17 +3,32 @@ public class SpacedLogger implements Logger {
 
 	@Override
 	public void log(String log) {
-		String s = log.toString();
-		s = s.replaceAll(".", "$0 ");
-		System.out.println(s);
+		StringBuilder result = new StringBuilder();
+		for (int i = 0; i < log.length(); i++) {
+		   if (i > 0) {
+		      result.append(" ");
+		    }
+
+		   result.append(log.charAt(i));
+		}
+
+		System.out.println(result.toString());
+		
 	}
 
 	@Override
 	public void error(String error) {
-		String e = error.toString();
-		e = e.replaceAll(".", "$0 ");
-		System.out.println("ERROR: " + e);
+		StringBuilder result = new StringBuilder();
+		for (int i = 0; i < error.length(); i++) {
+		   if (i > 0) {
+		      result.append(" ");
+		    }
+
+		   result.append(error.charAt(i));
+		}
+
+		System.out.println("E R R O R: " + result.toString());
 		
 	}
-
-}
+		
+	}
