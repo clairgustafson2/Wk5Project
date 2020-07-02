@@ -17,12 +17,12 @@ public class App {
 		System.out.println();
 		System.out.println();
 		
-		loggerS.log("Spaced");
+		loggerS.log("SpacedLogger");
 		
 		System.out.println();
 		System.out.println();
 		
-		loggerS.error("Spaced");
+		loggerS.error("SpacedLogger");
 		
 		
 		
