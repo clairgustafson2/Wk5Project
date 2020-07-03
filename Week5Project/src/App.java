@@ -23,7 +23,8 @@ public class App {
 		System.out.println();
 		
 		loggerS.error("SpacedLogger");
-			
+		
+
 	}
 
 }
